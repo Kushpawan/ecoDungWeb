@@ -74,11 +74,33 @@
                         </a>
                     </div>
                     <div class="md:hidden">
-                        <button class="text-[#101b0d] dark:text-background-light">
+                        <button id="mobileMenuBtn" class="text-[#101b0d] dark:text-background-light">
                             <span class="material-symbols-outlined text-3xl">menu</span>
                         </button>
                     </div>
                 </header>
+
+                <!-- Mobile Menu -->
+                <div id="mobileMenu"
+                     class="hidden md:hidden bg-background-light dark:bg-background-dark border-b border-[#e9f3e7] dark:border-primary/10 px-4 py-4">
+                    <div class="flex flex-col gap-4">
+                        <a class="text-[#101b0d] dark:text-background-light text-base font-medium leading-normal hover:text-primary dark:hover:text-primary py-2"
+                           href="index.html">Home</a>
+                        <a class="text-[#101b0d] dark:text-background-light text-base font-medium leading-normal hover:text-primary dark:hover:text-primary py-2"
+                           href="Products.html">Products</a>
+                        <a class="text-[#101b0d] dark:text-background-light text-base font-medium leading-normal hover:text-primary dark:hover:text-primary py-2"
+                           href="export.html">Export</a>
+                        <a class="text-[#101b0d] dark:text-background-light text-base font-medium leading-normal hover:text-primary dark:hover:text-primary py-2"
+                           href="about_us.html">About Us</a>
+                        <a class="text-[#101b0d] dark:text-background-light text-base font-medium leading-normal hover:text-primary dark:hover:text-primary py-2"
+                           href="Contact_us.html">Contact</a>
+                        <a href="Contact_us.html" class="mt-2">
+                            <button class="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-[#101b0d] text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                <span class="truncate">Enquire Now</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
 
                 <!-- HeroSection -->
                 <div class="@container mt-5">
@@ -95,9 +117,9 @@
                                 </h2>
                             </div>
                             <a href="Contact_us.html">
-                            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-[#101b0d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:opacity-90 transition-opacity">
-                                <span class="truncate">Enquire Now</span>
-                            </button>
+                                <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-[#101b0d] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                    <span class="truncate">Enquire Now</span>
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -228,52 +250,94 @@
                                 us today for a custom quote and partnership opportunities.</p>
                         </div>
                         <a href="Contact_us.html">
-                        <button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-[#101b0d] text-base font-bold leading-normal tracking-[0.015em] whitespace-nowrap hover:opacity-90 transition-opacity">
-                            <span class="truncate">Enquire Now</span>
-                        </button>
+                            <button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-[#101b0d] text-base font-bold leading-normal tracking-[0.015em] whitespace-nowrap hover:opacity-90 transition-opacity">
+                                <span class="truncate">Enquire Now</span>
+                            </button>
                         </a>
                     </div>
                 </div>
                 <!-- Footer -->
                 <footer class="mt-10 border-t border-solid border-[#e9f3e7] dark:border-primary/10 px-4 sm:px-10 py-8">
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        <div class="flex flex-col gap-4 col-span-1 md:col-span-2">
-                            <div class="flex items-center gap-4 text-[#101b0d] dark:text-background-light">
-                                <div class="size-6 text-primary">
-                                    <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"
-                                              fill="currentColor"></path>
-                                    </svg>
-                                </div>
+                    <div class="grid grid-cols-4 gap-x-12 gap-y-8 items-start">
+                        <!-- Col 1 -->
+                        <div class="flex flex-col gap-4 max-w-[420px]">
+                            <div class="flex items-center gap-3 text-[#101b0d] dark:text-background-light">
+                                <img src="ecodung_logo.png" alt="EcoDung Logo" class="h-8 w-8 object-contain">
                                 <h2 class="text-[#101b0d] dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em]">
-                                    EcoDung Exports</h2>
+                                    EcoDung Exports
+                                </h2>
                             </div>
-                            <p class="text-[#599a4c] dark:text-primary/70 text-sm max-w-sm">Your trusted partner for
-                                high-quality, organic cow dung products for a sustainable future.</p>
+                            <p class="text-[#599a4c] dark:text-primary/70 text-sm">
+                                Your trusted partner for high-quality, organic cow dung products for a sustainable future.
+                            </p>
                         </div>
+
+                        <!-- Col 2 -->
                         <div class="flex flex-col gap-4">
                             <h3 class="text-[#101b0d] dark:text-background-light font-bold text-sm">Quick Links</h3>
-                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary"
-                               href="Products.html">Products</a>
-                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary"
-                               href="export.html">Export</a>
-                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary"
-                               href="about_us.html">About Us</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary" href="Products.html">Products</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary" href="export.html">Export</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary" href="about_us.html">About Us</a>
                         </div>
+
+                        <!-- Col 3 -->
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-[#101b0d] dark:text-background-light font-bold text-sm">Legal</h3>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary" href="privacy_policy.html">Privacy Policy</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary" href="terms_of_service.html">Terms of Service</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary" href="shipping_policy.html">Shipping Policy</a>
+                        </div>
+
+                        <!-- Col 4 -->
                         <div class="flex flex-col gap-4">
                             <h3 class="text-[#101b0d] dark:text-background-light font-bold text-sm">Contact Us</h3>
-                            <p class="text-[#599a4c] dark:text-primary/70 text-sm">info@ecodungexports.com</p>
-                            <p class="text-[#599a4c] dark:text-primary/70 text-sm">+1 (234) 567-890</p>
+                            <p class="text-[#599a4c] dark:text-primary/70 text-sm">ecodungexports@gmail.com</p>
+                            <p class="text-[#599a4c] dark:text-primary/70 text-sm">+91 9450297213</p>
                         </div>
                     </div>
+
                     <div class="mt-8 pt-6 border-t border-solid border-[#e9f3e7] dark:border-primary/10 text-center">
-                        <p class="text-[#599a4c] dark:text-primary/70 text-xs">© 2025 EcoDung Exports. All Rights
-                            Reserved.</p>
+                        <p class="text-[#599a4c] dark:text-primary/70 text-xs">© 2025 EcoDung Exports. All Rights Reserved.</p>
                     </div>
                 </footer>
+
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    // Mobile menu toggle functionality
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+
+    mobileMenuBtn.addEventListener('click', function () {
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.remove('hidden');
+            menuIcon.textContent = 'close';
+        } else {
+            mobileMenu.classList.add('hidden');
+            menuIcon.textContent = 'menu';
+        }
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            mobileMenu.classList.add('hidden');
+            menuIcon.textContent = 'menu';
+        });
+    });
+
+    // Close mobile menu when resizing to desktop view
+    window.addEventListener('resize', function () {
+        if (window.innerWidth >= 768) {
+            mobileMenu.classList.add('hidden');
+            menuIcon.textContent = 'menu';
+        }
+    });
+</script>
 </body>
 </html>

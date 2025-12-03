@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Shipping Policy - EcoDung Exports</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#32d411",
+                        "background-light": "#f9fcf8",
+                        "background-dark": "#132210",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark">
+    <div class="layout-container flex h-full grow flex-col">
+        <div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                <!-- TopNavBar -->
+                <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9f3e7] dark:border-b-primary/10 px-4 sm:px-10 py-3">
+                    <div class="flex items-center gap-4 text-[#101b0d] dark:text-background-light">
+                        <div class="size-8">
+                            <img src="ecodung_logo.png" alt="EcoDung Logo" class="h-8 w-8 object-contain">
+                        </div>
+                        <h2 class="text-[#101b0d] dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em]">
+                            EcoDung Exports</h2>
+                    </div>
+                    <div class="hidden md:flex flex-1 justify-end gap-8">
+                        <div class="flex items-center gap-9">
+                            <a class="text-[#101b0d] dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                               href="index.html">Home</a>
+                            <a class="text-[#101b0d] dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                               href="Products.html">Products</a>
+                            <a class="text-[#101b0d] dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                               href="export.html">Export</a>
+                            <a class="text-[#101b0d] dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                               href="about_us.html">About Us</a>
+                            <a class="text-[#101b0d] dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                               href="Contact_us.html">Contact</a>
+                        </div>
+                        <a href="Contact_us.html">
+                            <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-[#101b0d] text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+                                <span class="truncate">Enquire Now</span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobileMenuBtn" class="text-[#101b0d] dark:text-background-light">
+                            <span class="material-symbols-outlined text-3xl">menu</span>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Mobile Menu -->
+                <div id="mobileMenu"
+                     class="hidden md:hidden bg-background-light dark:bg-background-dark border-b border-[#e9f3e7] dark:border-primary/10 px-4 py-4">
+                    <div class="flex flex-col gap-4">
+                        <a class="text-[#101b0d] dark:text-background-light text-base font-medium leading-normal hover:text-primary py-2"
+                           href="index.html">Home</a>
+                        <a class="text-[#101b0d] dark:text-background-light text-base font-medium leading-normal hover:text-primary py-2"
+                           href="Products.html">Products</a>
+                        <a class="text-[#101b0d] dark:text-background-light text-base font-medium leading-normal hover:text-primary py-2"
+                           href="export.html">Export</a>
+                        <a class="text-[#101b0d] dark:text-background-light text-base font-medium leading-normal hover:text-primary py-2"
+                           href="about_us.html">About Us</a>
+                        <a class="text-[#101b0d] dark:text-background-light text-base font-medium leading-normal hover:text-primary py-2"
+                           href="Contact_us.html">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Content Section -->
+                <div class="px-4 py-10">
+                    <div class="max-w-[800px] mx-auto">
+                        <h1 class="text-[#101b0d] dark:text-background-light text-4xl font-black leading-tight tracking-[-0.033em] mb-4">
+                            Shipping Policy</h1>
+                        <p class="text-[#599a4c] dark:text-primary/70 text-sm mb-8">Last Updated: December 3, 2025</p>
+
+                        <div class="prose prose-green dark:prose-invert max-w-none">
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">1.
+                                    Introduction</h2>
+                                <p class="text-[#101b0d] dark:text-primary/70 mb-4">
+                                    EcoDung Exports provides worldwide shipping for our premium organic cow dung
+                                    products from our facilities in Lucknow, Uttar Pradesh, India. This Shipping Policy
+                                    outlines our shipping methods, delivery timelines, costs, and responsibilities for
+                                    international export shipments.
+                                </p>
+                                <p class="text-[#101b0d] dark:text-primary/70 mb-4">
+                                    All shipments comply with Indian Export-Import regulations, international
+                                    phytosanitary standards, and destination country customs requirements for organic
+                                    agricultural products.
+                                </p>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">2.
+                                    Shipping Methods</h2>
+                                <ul class="list-disc pl-6 text-[#101b0d] dark:text-primary/70 mb-4 space-y-2">
+                                    <li><strong>Sea Freight (FCL/LCL):</strong> Most economical for bulk orders
+                                        (20ft/40ft containers or Less than Container Load)
+                                    </li>
+                                    <li><strong>Air Freight:</strong> Fastest option for urgent or sample shipments</li>
+                                    <li><strong>Express Courier:</strong> DHL, FedEx, UPS for small parcels (up to 70kg)
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">3.
+                                    Shipping Destinations</h2>
+                                <p class="text-[#101b0d] dark:text-primary/70 mb-2">We ship to all countries worldwide
+                                    except sanctioned regions. Popular destinations include:</p>
+                                <ul class="list-disc pl-6 text-[#101b0d] dark:text-primary/70 mb-4 space-y-1">
+                                    <li>USA, Canada, UK, EU countries</li>
+                                    <li>Australia, New Zealand</li>
+                                    <li>Middle East (UAE, Saudi Arabia, Qatar)</li>
+                                    <li>Southeast Asia, Africa</li>
+                                    <li>Latin America</li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">4.
+                                    Delivery Times</h2>
+                                <div class="grid md:grid-cols-2 gap-6 mb-4">
+                                    <div>
+                                        <h3 class="text-[#101b0d] dark:text-background-light text-xl font-bold mb-3">Sea
+                                            Freight</h3>
+                                        <ul class="list-disc pl-6 text-[#101b0d] dark:text-primary/70 space-y-1">
+                                            <li>USA/Europe: 25-40 days</li>
+                                            <li>Middle East: 10-20 days</li>
+                                            <li>Australia: 30-45 days</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-[#101b0d] dark:text-background-light text-xl font-bold mb-3">Air
+                                            Freight / Express</h3>
+                                        <ul class="list-disc pl-6 text-[#101b0d] dark:text-primary/70 space-y-1">
+                                            <li>Express Courier: 5-10 days</li>
+                                            <li>Air Freight: 7-14 days</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="text-[#101b0d] dark:text-primary/70 text-sm"><strong>Note:</strong> Times
+                                    exclude customs clearance (3-10 days additional).</p>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">5.
+                                    Shipping Costs</h2>
+                                <p class="text-[#101b0d] dark:text-primary/70 mb-4">
+                                    Shipping costs are calculated based on weight, volume, destination, and chosen
+                                    method. We provide detailed quotes including:
+                                </p>
+                                <ul class="list-disc pl-6 text-[#101b0d] dark:text-primary/70 mb-4 space-y-1">
+                                    <li>Freight charges (FOB/CIF terms available)</li>
+                                    <li>Export documentation & certification fees</li>
+                                    <li>Packaging & palletization</li>
+                                    <li>Insurance (optional, recommended)</li>
+                                </ul>
+                                <p class="text-[#101b0d] dark:text-primary/70 mb-2">Contact us for a free shipping
+                                    quote: <a href="mailto:ecodungexports@gmail.com"
+                                              class="text-primary hover:underline">ecodungexports@gmail.com</a></p>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">6.
+                                    Incoterms & Responsibilities</h2>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div class="bg-primary/10 dark:bg-primary/5 p-6 rounded-lg">
+                                        <h3 class="text-[#101b0d] dark:text-background-light font-bold mb-3">FOB
+                                            (Lucknow Port)</h3>
+                                        <p class="text-[#101b0d] dark:text-primary/70 text-sm mb-2">You arrange shipping
+                                            from Indian port</p>
+                                        <ul class="list-disc pl-4 text-[#101b0d] dark:text-primary/70 text-sm space-y-1">
+                                            <li>We handle: Production, inland transport, export docs</li>
+                                            <li>You handle: Ocean/air freight, import customs</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-primary/10 dark:bg-primary/5 p-6 rounded-lg">
+                                        <h3 class="text-[#101b0d] dark:text-background-light font-bold mb-3">CIF
+                                            (Destination Port)</h3>
+                                        <p class="text-[#101b0d] dark:text-primary/70 text-sm mb-2">We arrange shipping
+                                            to your port</p>
+                                        <ul class="list-disc pl-4 text-[#101b0d] dark:text-primary/70 text-sm space-y-1">
+                                            <li>We handle: Export docs, freight to destination port</li>
+                                            <li>You handle: Import customs, local delivery</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">7.
+                                    Packaging & Product Quality</h2>
+                                <ul class="list-disc pl-6 text-[#101b0d] dark:text-primary/70 mb-4 space-y-2">
+                                    <li>100% moisture-proof HDPE/PP bags (25kg/50kg/1MT jumbo bags)</li>
+                                    <li>Wooden pallets or fumigated crates for sea shipment</li>
+                                    <li>Phytosanitary certificate & Certificate of Origin included</li>
+                                    <li>Organic certification documents available</li>
+                                    <li>Quality inspection before shipment</li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">8. Customs
+                                    & Documentation</h2>
+                                <p class="text-[#101b0d] dark:text-primary/70 mb-2">We provide complete export
+                                    documentation:</p>
+                                <ul class="list-disc pl-6 text-[#101b0d] dark:text-primary/70 mb-4 space-y-1">
+                                    <li>Commercial Invoice & Packing List</li>
+                                    <li>Bill of Lading/Airway Bill</li>
+                                    <li>Certificate of Origin</li>
+                                    <li>Phytosanitary Certificate</li>
+                                    <li>Fumigation Certificate (for wooden packaging)</li>
+                                    <li>Organic Certification (if applicable)</li>
+                                </ul>
+                                <p class="text-[#101b0d] dark:text-primary/70 mb-4 text-sm"><strong>Customer
+                                    Responsibility:</strong> Import duties, taxes, and local customs clearance.</p>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">9.
+                                    Tracking & Support</h2>
+                                <ul class="list-disc pl-6 text-[#101b0d] dark:text-primary/70 mb-4 space-y-1">
+                                    <li>Real-time shipment tracking provided</li>
+                                    <li>24/7 customer support during transit</li>
+                                    <li>Weekly status updates via email</li>
+                                    <li>Customs clearance assistance</li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">10.
+                                    Returns & Claims</h2>
+                                <p class="text-[#101b0d] dark:text-primary/70 mb-4">
+                                    All sales are final once goods leave our facility. Claims for damage/shortage must
+                                    be filed within 7 days of delivery with photos and documentation. We assist with
+                                    insurance claims when applicable.
+                                </p>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">11. Force
+                                    Majeure</h2>
+                                <p class="text-[#101b0d] dark:text-primary/70 mb-4">
+                                    We are not liable for delays caused by natural disasters, strikes, port congestion,
+                                    customs delays, or other events beyond our control.
+                                </p>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-2xl font-bold mb-4">12.
+                                    Contact Information</h2>
+                                <p class="text-[#101b0d] dark:text-primary/70 mb-2">
+                                    For shipping quotes, tracking, or inquiries, please contact our logistics team:
+                                </p>
+                                <div class="bg-primary/10 dark:bg-primary/5 p-4 rounded-lg mt-4">
+                                    <p class="text-[#101b0d] dark:text-background-light font-bold mb-2">EcoDung Exports
+                                        - Logistics</p>
+                                    <p class="text-[#101b0d] dark:text-primary/70 mb-1">E-2/722 Vinay Khand Gomti
+                                        Nagar</p>
+                                    <p class="text-[#101b0d] dark:text-primary/70 mb-1">Lucknow, Uttar Pradesh 226010,
+                                        India</p>
+                                    <p class="text-[#101b0d] dark:text-primary/70 mb-1">Email: <a
+                                            href="mailto:ecodungexports@gmail.com" class="hover:underline">ecodungexports@gmail.com</a>
+                                    </p>
+                                    <p class="text-[#101b0d] dark:text-primary/70">Phone: +91-9450297213</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="mt-10 border-t border-solid border-[#e9f3e7] dark:border-primary/10 px-4 sm:px-10 py-8">
+                    <div class="grid grid-cols-4 gap-x-12 gap-y-8 items-start">
+                        <!-- Col 1 -->
+                        <div class="flex flex-col gap-4 max-w-[420px]">
+                            <div class="flex items-center gap-3 text-[#101b0d] dark:text-background-light">
+                                <img src="ecodung_logo.png" alt="EcoDung Logo" class="h-8 w-8 object-contain">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em]">
+                                    EcoDung Exports
+                                </h2>
+                            </div>
+                            <p class="text-[#599a4c] dark:text-primary/70 text-sm">
+                                Your trusted partner for high-quality, organic cow dung products for a sustainable
+                                future.
+                            </p>
+                        </div>
+
+                        <!-- Col 2 -->
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-[#101b0d] dark:text-background-light font-bold text-sm">Quick Links</h3>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary"
+                               href="Products.html">Products</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary"
+                               href="export.html">Export</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary"
+                               href="about_us.html">About Us</a>
+                        </div>
+
+                        <!-- Col 3 -->
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-[#101b0d] dark:text-background-light font-bold text-sm">Legal</h3>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary"
+                               href="privacy_policy.html">Privacy Policy</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary"
+                               href="terms_of_service.html">Terms of Service</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary"
+                               href="shipping_policy.html">Shipping Policy</a>
+                        </div>
+
+                        <!-- Col 4 -->
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-[#101b0d] dark:text-background-light font-bold text-sm">Contact Us</h3>
+                            <p class="text-[#599a4c] dark:text-primary/70 text-sm">ecodungexports@gmail.com</p>
+                            <p class="text-[#599a4c] dark:text-primary/70 text-sm">+91 9450297213</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-solid border-[#e9f3e7] dark:border-primary/10 text-center">
+                        <p class="text-[#599a4c] dark:text-primary/70 text-xs">© 2025 EcoDung Exports. All Rights
+                            Reserved.</p>
+                    </div>
+                </footer>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+
+    mobileMenuBtn.addEventListener('click', function () {
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.remove('hidden');
+            menuIcon.textContent = 'close';
+        } else {
+            mobileMenu.classList.add('hidden');
+            menuIcon.textContent = 'menu';
+        }
+    });
+
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            mobileMenu.classList.add('hidden');
+            menuIcon.textContent = 'menu';
+        });
+    });
+</script>
+</body>
+</html>
