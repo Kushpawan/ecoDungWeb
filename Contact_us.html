@@ -172,52 +172,77 @@
                                     <p class="mt-3 text-base text-earthy-brown dark:text-gray-300">Have a question or a
                                         specific requirement? Fill out the form below and our team will get back to you
                                         shortly.</p>
-                                    <form class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <form class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                                          action="https://api.web3forms.com/submit"
+                                          method="POST">
+
+                                        <!-- Web3Forms required fields -->
+                                        <input type="hidden" name="access_key" value="3923f1a9-8b2e-4946-af6d-f0dda2b25cf9">
+                                        <input type="hidden" name="subject" value="New enquiry from EcoDung Exports website">
+                                        <input type="hidden" name="from_name" value="EcoDung Exports Website">
+                                        <!-- optional: disable Web3Forms captcha -->
+                                        <input type="hidden" name="captcha" value="false">
+
                                         <div>
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="name">Name</label>
-                                            <input class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                   id="name" placeholder="John Doe" type="text"/>
+                                            <input
+                                                    class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                                                    id="name" name="name" placeholder="John Doe" type="text" required />
                                         </div>
+
                                         <div>
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="email">Email</label>
-                                            <input class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                   id="email" placeholder="john.doe@example.com" type="email"/>
+                                            <input
+                                                    class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                                                    id="email" name="email" placeholder="john.doe@example.com" type="email" required />
                                         </div>
+
                                         <div>
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="phone">Phone</label>
-                                            <input class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                   id="phone" placeholder="+1 (555) 123-4567" type="tel"/>
+                                            <input
+                                                    class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                                                    id="phone" name="phone" placeholder="+1 (555) 123-4567" type="tel" required />
                                         </div>
+
                                         <div>
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="country">Country</label>
-                                            <input class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                   id="country" placeholder="Your Country" type="text"/>
+                                            <input
+                                                    class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                                                    id="country" name="country" placeholder="Your Country" type="text" />
                                         </div>
+
                                         <div class="sm:col-span-2">
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="product">Product &amp; Quantity</label>
-                                            <input class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                   id="product" placeholder="e.g., Cow Dung Powder, 5 Tons"
-                                                   type="text"/>
+                                            <input
+                                                    class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                                                    id="product" name="product" placeholder="e.g., Cow Dung Powder, 5 Tons" type="text" />
                                         </div>
+
                                         <div class="sm:col-span-2">
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="message">Message</label>
                                             <textarea
                                                     class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                    id="message" placeholder="Your message..." rows="4"></textarea>
+                                                    id="message" name="message" placeholder="Your message..." rows="4" required></textarea>
                                         </div>
+
+                                        <!-- simple honeypot field for spam protection -->
+                                        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
                                         <div class="sm:col-span-2">
-                                            <button class="w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors"
+                                            <button
+                                                    class="w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors"
                                                     type="submit">
                                                 <span class="truncate">Submit</span>
                                             </button>
                                         </div>
                                     </form>
+
                                 </div>
                             </div>
                         </div>
