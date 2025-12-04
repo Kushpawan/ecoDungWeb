@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-        <html class="light" lang="en"><head>
-        <meta charset="utf-8"/>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        <title>Contact Us - EcoDung Exports</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact us - EcoDung Exports</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
           rel="stylesheet"/>
@@ -172,52 +169,77 @@
                                     <p class="mt-3 text-base text-earthy-brown dark:text-gray-300">Have a question or a
                                         specific requirement? Fill out the form below and our team will get back to you
                                         shortly.</p>
-                                    <form class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <form class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6"
+                                          action="https://api.web3forms.com/submit"
+                                          method="POST">
+
+                                        <!-- Web3Forms required fields -->
+                                        <input type="hidden" name="access_key" value="3923f1a9-8b2e-4946-af6d-f0dda2b25cf9">
+                                        <input type="hidden" name="subject" value="New enquiry from EcoDung Exports website">
+                                        <input type="hidden" name="from_name" value="EcoDung Exports Website">
+                                        <!-- optional: disable Web3Forms captcha -->
+                                        <input type="hidden" name="captcha" value="false">
+
                                         <div>
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="name">Name</label>
-                                            <input class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                   id="name" placeholder="John Doe" type="text"/>
+                                            <input
+                                                    class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                                                    id="name" name="name" placeholder="John Doe" type="text" required />
                                         </div>
+
                                         <div>
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="email">Email</label>
-                                            <input class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                   id="email" placeholder="john.doe@example.com" type="email"/>
+                                            <input
+                                                    class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                                                    id="email" name="email" placeholder="john.doe@example.com" type="email" required />
                                         </div>
+
                                         <div>
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="phone">Phone</label>
-                                            <input class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                   id="phone" placeholder="+1 (555) 123-4567" type="tel"/>
+                                            <input
+                                                    class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                                                    id="phone" name="phone" placeholder="+1 (555) 123-4567" type="tel" required />
                                         </div>
+
                                         <div>
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="country">Country</label>
-                                            <input class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                   id="country" placeholder="Your Country" type="text"/>
+                                            <input
+                                                    class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                                                    id="country" name="country" placeholder="Your Country" type="text" />
                                         </div>
+
                                         <div class="sm:col-span-2">
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="product">Product &amp; Quantity</label>
-                                            <input class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                   id="product" placeholder="e.g., Cow Dung Powder, 5 Tons"
-                                                   type="text"/>
+                                            <input
+                                                    class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
+                                                    id="product" name="product" placeholder="e.g., Cow Dung Powder, 5 Tons" type="text" />
                                         </div>
+
                                         <div class="sm:col-span-2">
                                             <label class="text-sm font-medium text-deep-forest-green dark:text-gray-200"
                                                    for="message">Message</label>
                                             <textarea
                                                     class="mt-2 block w-full rounded-md border-gray-300 dark:border-gray-600 bg-off-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50"
-                                                    id="message" placeholder="Your message..." rows="4"></textarea>
+                                                    id="message" name="message" placeholder="Your message..." rows="4" required></textarea>
                                         </div>
+
+                                        <!-- simple honeypot field for spam protection -->
+                                        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
                                         <div class="sm:col-span-2">
-                                            <button class="w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors"
+                                            <button
+                                                    class="w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors"
                                                     type="submit">
                                                 <span class="truncate">Submit</span>
                                             </button>
                                         </div>
                                     </form>
+
                                 </div>
                             </div>
                         </div>
@@ -225,47 +247,51 @@
                 </main>
                 <!-- Footer -->
                 <footer class="mt-10 border-t border-solid border-[#e9f3e7] dark:border-primary/10 px-4 sm:px-10 py-8">
-                    <div class="grid grid-cols-4 gap-x-12 gap-y-8 items-start">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-8 items-start">
+
                         <!-- Col 1 -->
-                        <div class="flex flex-col gap-4 max-w-[420px]">
+                        <div class="flex flex-col gap-4 w-full break-words">
                             <div class="flex items-center gap-3 text-[#101b0d] dark:text-background-light">
                                 <img src="ecodung_logo.png" alt="EcoDung Logo" class="h-8 w-8 object-contain">
-                                <h2 class="text-[#101b0d] dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em]">
+                                <h2 class="text-[#101b0d] dark:text-background-light text-lg font-bold leading-tight tracking-[-0.015em] whitespace-normal break-words">
                                     EcoDung Exports
                                 </h2>
                             </div>
-                            <p class="text-[#599a4c] dark:text-primary/70 text-sm">
+                            <p class="text-[#599a4c] dark:text-primary/70 text-sm whitespace-normal break-words">
                                 Your trusted partner for high-quality, organic cow dung products for a sustainable future.
                             </p>
                         </div>
 
                         <!-- Col 2 -->
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 w-full break-words">
                             <h3 class="text-[#101b0d] dark:text-background-light font-bold text-sm">Quick Links</h3>
-                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary" href="Products.html">Products</a>
-                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary" href="export.html">Export</a>
-                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary dark:hover:text-primary" href="about_us.html">About Us</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm" href="Products.html">Products</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm" href="export.html">Export</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm" href="about_us.html">About Us</a>
                         </div>
 
                         <!-- Col 3 -->
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 w-full break-words">
                             <h3 class="text-[#101b0d] dark:text-background-light font-bold text-sm">Legal</h3>
-                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary" href="privacy_policy.html">Privacy Policy</a>
-                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary" href="terms_of_service.html">Terms of Service</a>
-                            <a class="text-[#599a4c] dark:text-primary/70 text-sm hover:text-primary" href="shipping_policy.html">Shipping Policy</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm" href="privacy_policy.html">Privacy Policy</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm" href="terms_of_service.html">Terms of Service</a>
+                            <a class="text-[#599a4c] dark:text-primary/70 text-sm" href="shipping_policy.html">Shipping Policy</a>
                         </div>
 
                         <!-- Col 4 -->
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 w-full break-words">
                             <h3 class="text-[#101b0d] dark:text-background-light font-bold text-sm">Contact Us</h3>
                             <p class="text-[#599a4c] dark:text-primary/70 text-sm">ecodungexports@gmail.com</p>
                             <p class="text-[#599a4c] dark:text-primary/70 text-sm">+91 9450297213</p>
                         </div>
+
                     </div>
 
                     <div class="mt-8 pt-6 border-t border-solid border-[#e9f3e7] dark:border-primary/10 text-center">
                         <p class="text-[#599a4c] dark:text-primary/70 text-xs">© 2025 EcoDung Exports. All Rights Reserved.</p>
                     </div>
+
                 </footer>
 
             </div>
